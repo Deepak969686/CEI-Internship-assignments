@@ -1,8 +1,8 @@
 # CEI-Internship-assignments
-Week-1 Assignment Complete
+#Week-1 Assignment Complete
 
-Week-2 Assignment:
-# Concepts Covered
+#Week-2 Assignment:
+Concepts Covered
 ✔ Data Preprocessing  
 ✔ Exploratory Data Analysis  
 ✔ Feature Engineering  
