@@ -15,10 +15,8 @@
 ✔ Time Series Analysis  
 ✔ Forecasting  
 
-# week-3 Assignment:
+# 📌 Week-3 Assignment Classification, Ensemble Learning & Clustering:
 # 🌍 Country Development Intelligence System using Machine Learning
-
-## 📌 Week-3 Assignment: Classification, Ensemble Learning & Clustering
 
 ## 📖 Project Overview
 
