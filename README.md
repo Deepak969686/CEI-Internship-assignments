@@ -1,7 +1,7 @@
 # CEI-Internship-assignments
-# Week-1 Assignment Complete
+# 📌Week-1 Assignment Complete
 
-# Week-2 Assignment:
+# 📌Week-2 Assignment:
 ✔ Data Preprocessing  
 ✔ Exploratory Data Analysis  
 ✔ Feature Engineering  
