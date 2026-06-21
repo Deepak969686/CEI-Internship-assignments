@@ -138,7 +138,7 @@ Steps performed:
 
 Removed non-numeric identifier:
 
-# 📌Week-2 Assignment:
+# 📌Week-3 Assignment:
 
 # 📘 CIFAR-10 Image Classification: ANN vs CNN
 
