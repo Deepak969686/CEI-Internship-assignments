@@ -351,3 +351,82 @@ After completing this project:
 - Data Augmentation improves generalization.
 - This project builds strong fundamentals for Computer Vision and Deep Learning.
 
+# 📌Week-4 Assignment
+# Deep Learning Text Generation using RNN, LSTM, and GRU
+
+## 📖 Overview
+This project demonstrates text generation using three recurrent neural network architectures: **Vanilla RNN**, **LSTM**, and **GRU**. The models are trained on a small text corpus to learn word sequences and predict the next word, enabling them to generate meaningful text.
+
+The project compares the performance of each model based on training loss, accuracy, generated text quality, and their ability to capture long-term dependencies.
+
+---
+
+## 🎯 Objectives
+- Implement text generation using Vanilla RNN, LSTM, and GRU.
+- Understand sequence modeling and next-word prediction.
+- Compare the performance of different recurrent architectures.
+- Analyze how gated networks improve learning over a simple RNN.
+
+---
+
+## 🛠️ Technologies Used
+- Python
+- TensorFlow / Keras
+- NumPy
+- Matplotlib
+- Scikit-learn
+
+---
+
+## 📂 Dataset
+A small built-in text corpus is used for training. The corpus can easily be replaced with larger datasets such as:
+- Shakespeare text
+- Song lyrics
+- Stories
+- Chat conversations
+- Custom text documents
+
+---
+
+## ⚙️ Project Workflow
+1. Load the text corpus.
+2. Tokenize the text.
+3. Create n-gram input sequences.
+4. Pad sequences to equal length.
+5. Train Vanilla RNN, LSTM, and GRU models.
+6. Compare training and validation performance.
+7. Generate text using a seed sentence.
+
+---
+
+## 📊 Model Comparison
+
+| Model | Strength | Limitation |
+|--------|----------|------------|
+| Vanilla RNN | Simple architecture | Poor long-term memory |
+| LSTM | Learns long-term dependencies | More parameters |
+| GRU | Faster training with comparable performance | Slightly less expressive than LSTM |
+
+---
+
+## 📈 Results
+- Vanilla RNN learns basic sequential patterns but struggles with long-term dependencies.
+- LSTM produces more coherent and context-aware text.
+- GRU provides performance similar to LSTM while training faster.
+- Loss and accuracy comparisons highlight the advantages of gated architectures.
+
+---
+
+## 🚀 Future Improvements
+- Train on larger datasets.
+- Use pretrained word embeddings.
+- Implement Bidirectional LSTM.
+- Add Attention Mechanism.
+- Compare with Transformer-based models.
+
+---
+
+## 📌 Conclusion
+This project demonstrates the fundamentals of text generation using recurrent neural networks. Experimental results show that **LSTM** and **GRU** outperform the **Vanilla RNN** in capturing long-term dependencies and generating more meaningful text, making them more suitable for sequence modeling tasks.
+
+---
