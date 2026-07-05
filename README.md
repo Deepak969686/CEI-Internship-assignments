@@ -430,3 +430,114 @@ A small built-in text corpus is used for training. The corpus can easily be repl
 This project demonstrates the fundamentals of text generation using recurrent neural networks. Experimental results show that **LSTM** and **GRU** outperform the **Vanilla RNN** in capturing long-term dependencies and generating more meaningful text, making them more suitable for sequence modeling tasks.
 
 ---
+
+# 📌 Week-6 Assignment:
+
+# MNIST Image Denoising using Convolutional Autoencoder
+
+## Overview
+
+This project implements a **Convolutional Denoising Autoencoder** using **TensorFlow/Keras** to remove Gaussian noise from handwritten digit images in the **MNIST** dataset. The model learns to reconstruct clean images from noisy inputs by encoding important image features into a compressed latent representation and decoding them back into denoised images.
+
+---
+
+## Objectives
+
+- Load and preprocess the MNIST dataset.
+- Add artificial Gaussian noise to images.
+- Build and train a Convolutional Autoencoder.
+- Reconstruct clean images from noisy inputs.
+- Evaluate reconstruction performance using **MSE** and **PSNR**.
+- Visualize the denoising results.
+
+---
+
+## Dataset
+
+The project uses the **MNIST Handwritten Digits** dataset.
+
+- **Training Images:** 60,000
+- **Testing Images:** 10,000
+- **Image Size:** 28 × 28 pixels
+- **Channels:** Grayscale (1 channel)
+
+Pixel values are normalized to the range **[0, 1]** before training.
+
+---
+
+## Model Architecture
+
+The autoencoder consists of two parts:
+
+### Encoder
+- Conv2D (32 filters, ReLU)
+- MaxPooling2D
+- Conv2D (16 filters, ReLU)
+- MaxPooling2D
+
+### Decoder
+- Conv2D (16 filters, ReLU)
+- UpSampling2D
+- Conv2D (32 filters, ReLU)
+- UpSampling2D
+- Conv2D (1 filter, Sigmoid)
+
+The encoder compresses the input image into a latent representation, while the decoder reconstructs the clean image from it.
+
+---
+
+## Training Details
+
+- **Optimizer:** Adam
+- **Loss Function:** Mean Squared Error (MSE)
+- **Epochs:** 20
+- **Batch Size:** 128
+
+The model is trained by mapping **noisy images → clean images**.
+
+---
+
+## Evaluation
+
+Model performance is evaluated using:
+
+- Mean Squared Error (MSE)
+- Peak Signal-to-Noise Ratio (PSNR)
+
+The notebook also visualizes:
+
+- Original Images
+- Noisy Images
+- Denoised Images
+- Training and Validation Loss Curves
+
+---
+
+## Results
+
+The trained autoencoder effectively removes Gaussian noise while preserving the handwritten digit structure. The reconstructed images are significantly cleaner than the noisy inputs, demonstrating the effectiveness of convolutional autoencoders for image denoising.
+
+---
+
+## Technologies Used
+
+- Python
+- TensorFlow / Keras
+- NumPy
+- Matplotlib
+- MNIST Dataset
+
+---
+
+## Project Structure
+
+```
+MNIST-Denoising-Autoencoder/
+│
+├── Complete_MNIST_Denoising_Autoencoder_Assignment.ipynb
+├── mnist_denoising_autoencoder.keras
+├── README.md
+└── requirements.txt
+```
+
+---
